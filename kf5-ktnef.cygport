@@ -1,0 +1,24 @@
+inherit kf5
+
+NAME="kf5-ktnef"
+VERSION=17.04.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE TNEF library"
+DESCRIPTION="The ktnef library contains an API for the handling of TNEF data.
+The API permits access to the actual attachments, the message properties, and
+allows one to view/extract message formatted text in Rich Text Format format."
+
+PKG_NAMES="libKF5Tnef5 libKF5Tnef-devel"
+libKF5Tnef5_CONTENTS="
+	usr/bin/cygKF5Tnef-5.dll
+	usr/share/doc/${NAME}
+	usr/share/locale/*/LC_MESSAGES/libktnef5.mo
+"
+libKF5Tnef_devel_CONTENTS="
+	usr/include/KF5/KTNEF/
+	usr/include/KF5/ktnef_version.h
+	usr/lib/cmake/KF5Tnef/
+	usr/lib/libKF5Tnef.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_KTNef.pri
+"
