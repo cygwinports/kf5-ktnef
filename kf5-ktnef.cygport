@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-ktnef"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE TNEF library"
@@ -15,6 +15,7 @@ libKF5Tnef5_CONTENTS="
 	usr/share/doc/${NAME}
 	usr/share/locale/*/LC_MESSAGES/libktnef5.mo
 "
+libKF5Tnef_devel_REQUIRES="libKF5CalendarCore-devel libQt5Core-devel"
 libKF5Tnef_devel_CONTENTS="
 	usr/include/KF5/KTNEF/
 	usr/include/KF5/ktnef_version.h
